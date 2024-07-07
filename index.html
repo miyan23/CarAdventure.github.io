@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>分布式多车协作探索</title>
+	<!-- 引入CSS -->
+	<link rel="stylesheet" href="./iconfont/iconfont.css">
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/user.css">
+	<!-- 引入echars -->
+	<script src="./js/echarts.js"></script>
+	<!-- 搜索图标 -->
+	<link rel="shortcut icon" href="electricity.ico" type="image/x-icon">
+</head>
+
+<body>
+	<!-- 分布式多车协作探索 -->
+	<div class="platform">
+		<div id="manageDisplay" class="manage">
+			<ul id="userList"></ul>
+		</div>
+
+		<!-- 顶栏 -->
+		<div class="head">
+			<!-- logo -->
+			<div class="logo"></div>
+
+			<!-- right -->
+			<div class="right">
+				<!-- 按钮 -->
+				<button id="userManage">用户管理</button>
+
+				<!-- 时间 -->
+				<p class="clock">
+					<span id="hours">00</span>
+					<i>:</i>
+					<span id="minutes">25</span>
+					<i>:</i>
+					<span id="seconds">20</span>
+				</p>
+
+				<!-- 地球 -->
+				<div id="earth" class="earth"></div>
+
+				<!-- 箭头 -->
+				<span class="iconfont icon-xiajiantou"></span>
+			</div>
+		</div>
+
+		<!-- 中部 -->
+		<div class="intent">
+			<!-- 左半 -->
+			<div class="left">
+				<!-- 左中 -->
+				<div class="second">
+					<!-- 标题 -->
+					<div class="title">基础设置</div>
+
+					<!-- 数据 -->
+					<div class="data">
+						<div>
+							<i>小车最大数量</i>
+							<i id="valueCarNum">4</i>
+							<i>辆</i>
+							<br>
+							<input type="range" id="rangeCarNum" value="4" min="1" max="20" step="1">
+						</div>
+						<div>
+							<i>障碍物最大数量</i>
+							<i id="valueBlockNum">20</i>
+							<i>块</i>
+							<input type="range" id="rangeBlockNum" value="20" min="0" max="80" step="1">
+						</div>
+						<div>
+							<i>地图大小</i>
+							<i id="valueMapSize">20</i>
+							<i>*块</i>
+							<input type="range" id="rangeMapSize" value="20" min="10" max="100" step="10">
+						</div>
+						<div>
+							<i>小车任务时钟</i>
+							<i id="valueTaskTime">1000</i>
+							<i>毫秒</i>
+							<input type="range" id="rangeTaskTime" value="1000" min="200" max="3000" step="200">
+						</div>
+					</div>
+				</div>
+
+				<button id="modifySetting">修改设置</button>
+			</div>
+
+			<!-- 中间 -->
+			<div class="middle" id="middle">
+				<img id="car" src="./images/car.png">
+
+				<div class="map" id="map">
+				</div>
+			</div>
+
+			<!-- 右半 -->
+			<div class="right">
+				<div class="up">
+					<div class="title">
+						<i>执行操作</i>
+					</div>
+					<!-- 按钮 -->
+					<div class="button-row">
+						<button id="addCarButton" disabled>添加探索车</button>
+						<button id="addBlockButton" disabled>添加障碍物</button>
+					</div>
+					<div class="button-row">
+						<button id="startExplore" disabled>开始探索</button>
+						<button id="pauseExplore" disabled>暂停探索</button>
+						<button id="endExplore" disabled>结束探索</button>
+					</div>
+					<div class="button-row">
+						<button id="clearAll" disabled>清空地图</button>
+						<button id="playBack" disabled>回放探索</button>
+
+						<div id="popup" class="popup">
+							<input placeholder="userId" type="text" id="userId" name="userId">
+							<input placeholder="turns" type="text" id="turns" name="turns">
+							<input placeholder="carId" type="text" id="carId" name="carId">
+							<button id="submitInfo">提交</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 底部 -->
+		<div class="bottom">
+			<div class="left">
+				<div class="title">探索情况</div>
+
+				<div class="data" id="bar"></div>
+			</div>
+
+			<div class="middle">
+				<div class="data">
+					<div class="left">
+						<div class="num">
+							<i id="carNumber">0</i>
+							<i>/</i>
+							<i id="blockNumber">0</i>
+						</div>
+						<i>小车/障碍</i>
+					</div>
+
+					<div class="right" id="pie"></div>
+				</div>
+			</div>
+
+			<div class="right">
+				<div class="title">系统反馈</div>
+
+				<div class="data">
+					<span id="messages"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 引入js文件 -->
+	<script src="./js/index.js"></script>
+
+	<!-- echarts绘图——饼图 -->
+	<script src="./js/pie.js"></script>
+	<!-- echarts绘图——地图 -->
+	<script src="./js/map.js"></script>
+
+	<!-- 小车逻辑 -->
+	<script src="./js/logic.js"></script>
+	<!-- 设置输入滑动条 -->
+	<script src="./js/range.js"></script>
+</body>
+
+</html>

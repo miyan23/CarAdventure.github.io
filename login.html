@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>登录</title>
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+	<div class="background">
+		<div class="logo"></div>
+
+		<div class="screen">
+			<div class="up">
+				<button id="accountLogin">账号登录</button>
+				<button id="accountRegist">用户注册</button>
+			</div>
+			<div class="line">
+				<div class="line1"></div>
+				<div class="line2" id="line2"></div>
+			</div>
+			<div id="middleInput" class="middle">
+				<input placeholder="请输入账号" type="text" id="account" name="account">
+				<input placeholder="请输入密码" type="password" id="password" name="password">
+				<button id="identify">人机验证</button>
+				<select id="confirm" name="confirm">
+					<option value="ordinaryUser">普通用户</option>
+					<option value="experimenter">实验人员</option>
+					<option value="superman">管理员</option>
+				</select>
+				<div id="showNone" class="down">
+					<div class="left">
+						<div class="kh"></div>
+						<p>记住密码</p>
+					</div>
+					<div class="right">
+						<p>忘记密码?</p>
+					</div>
+				</div>
+			</div>
+			<div class="downLogin">
+				<button id="sendLogin">登录</button>
+			</div>
+		</div>
+
+		<div id="box" class="box">
+			<div class="imgbox">
+				<div class="white"></div>
+			</div>
+
+			<div id="btnbox" class="btnbox">
+				<div id="btnboximg" class="btnboximg"></div>
+				<div id="btn" class="btn"></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="./js/login.js"></script>
+</body>
+
+</html>

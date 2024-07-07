@@ -1,0 +1,284 @@
+.background {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../images/背景.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.background .logo {
+	position: absolute;
+	width: 17.28vw;
+	height: 10.03vh;
+	left: 8.42vw;
+	top: 10.94vh;
+	background-image: url(../images/fbs.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.background .screen {
+	position: absolute;
+	width: 24.60vw;
+	height: 53.91vh;
+	top: 24.22vh;
+	left: 4.69vw;
+	border-radius: 0.88vw;
+	opacity: 1;
+	background: radial-gradient(213% 213% at 50% 50%, rgba(7, 18, 33, 0) 0%, #81E0F6 100%);
+	box-sizing: border-box;
+	border: 2px solid #249AD3;
+	box-shadow: inset 0px 0px 30px 0px rgba(0, 210, 255, 0.8);
+}
+
+.background .screen .up {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 5.6vw;
+	padding-right: 5.6vw;
+	padding-top: 5.21vh;
+}
+
+.background .screen .up #accountLogin {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	outline: none;
+	box-shadow: none;
+
+	color: #FFFFFF;
+	font-family: Microsoft YaHei;
+	font-size: 1.32vw;
+	font-weight: normal;
+	line-height: normal;
+	letter-spacing: 0em;
+}
+
+.background .screen .up #accountRegist {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	outline: none;
+	box-shadow: none;
+
+	color: #FFFFFF;
+	font-family: Microsoft YaHei;
+	font-size: 1.02vw;
+	font-weight: normal;
+	line-height: normal;
+	letter-spacing: 0em;
+}
+
+.background .screen .line {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 0.4vw;
+	width: 15.37vw;
+	left: 4.54vw;
+	margin-top: 2.3vh;
+}
+
+.background .screen .line .line1 {
+	width: 100%;
+	height: 0.2vw;
+	background-color: #346287;
+}
+
+.background .screen .line .line2 {
+	position: absolute;
+	left: 1.58vw;
+	width: 4vw;
+	height: 100%;
+	background-color: #2FB5D2;
+}
+
+.background .screen .middle {
+	position: absolute;
+	width: 15.37vw;
+	left: 4.54vw;
+	height: 23.18vh;
+	margin-top: 7.55vh;
+}
+
+.background .screen .middle #account {
+	width: 100%;
+	height: 4.43vh;
+	padding-left: 1.17vw;
+	padding-right: 1.17vw;
+	font-family: Microsoft YaHei;
+	font-size: 1.02vw;
+	color: #FFFFFF;
+	background-color: #193654;
+}
+
+.background .screen .middle #password {
+	width: 100%;
+	height: 4.43vh;
+	margin-top: 2.6vh;
+	padding-left: 1.17vw;
+	padding-right: 1.17vw;
+	font-family: Microsoft YaHei;
+	font-size: 1.02vw;
+	color: #FFFFFF;
+	background-color: #193654;
+}
+
+.background .screen .middle #identify {
+	width: 9.66vw;
+	height: 4.43vh;
+	margin-top: 2.6vh;
+	margin-left: 2.4vw;
+	padding-left: 1.17vw;
+	padding-right: 1.17vw;
+	font-family: Microsoft YaHei;
+	font-size: 1.02vw;
+	color: #FFFFFF;
+	background-color: #193654;
+	border: 1px solid #6799a4;
+}
+
+.background .screen .middle #confirm {
+	display: none;
+	width: 100%;
+	height: 4.43vh;
+	margin-top: 2.6vh;
+	padding-left: 1.17vw;
+	padding-right: 1.17vw;
+	font-family: Microsoft YaHei;
+	font-size: 1.02vw;
+	color: #FFFFFF;
+	background-color: #193654;
+}
+
+.background .screen .middle .down {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2.6vh;
+	width: 100%;
+	height: 2.34vh;
+	padding-left: 0.73vw;
+	padding-right: 0.73vw;
+}
+
+.background .screen .middle .down .left {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	width: 5.42vw;
+}
+
+.background .screen .middle .down .left .kh {
+	width: 0.88vw;
+	height: 1.56vh;
+	background-color: transparent;
+	border: 1px solid #FFFFFF;
+}
+
+.background .screen .middle .down .left p {
+	color: #FFFFFF;
+	font-family: Microsoft YaHei;
+	font-size: 1.02vw;
+}
+
+.background .screen .middle .down .right {
+	height: 100%;
+	width: 5.12vw;
+}
+
+.background .screen .middle .down .right p{
+	color: #FFFFFF;
+	font-family: Microsoft YaHei;
+	font-size: 1.02vw;
+}
+
+.background .screen .downLogin {
+	position: absolute;
+	margin-top: 35.94vh;
+	width: 15.37vw;
+	height: 4.43vh;
+	left: 4.54vw;
+}
+
+.background .screen .downLogin #sendLogin {
+	width: 100%;
+	height: 100%;
+	color: #FFFFFF;
+	font-family: Microsoft YaHei;
+	font-size: 1.32vw;
+	background-color: #257EEE;
+	border: none;
+}
+
+.background .box {
+	display: none;
+	position: absolute;
+	overflow: hidden;
+	width: 20vw;
+	height: 24vh;
+	left: 40vw;
+	top: 20vh;
+	background-color: #fff;
+	
+}
+
+.background .box .white {
+	position: absolute;
+	width: 4.2vw;
+	height: 4.0vw;
+	left: 5.2vw;
+	top: 5vh;
+	background-image: url(../images/hidden.png);
+	/* 降低亮度并增加对比度 */
+	filter: brightness(0.4) contrast(1.2);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.background .box .btnbox .btnboximg {
+	position: absolute;
+	width: 4.4vw;
+	height: 4.0vw;
+	left: 14vw;
+	top: 5vh;
+	background-image: url(../images/hidden.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 0 0px 24px rgba(0,0,0,0.5);
+}
+
+.background .box .imgbox {
+	position: relative;
+	width: 100%;
+	height: 95%;
+	background-image: url(../images/fna.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.background .box .btnbox {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 0vh;
+	text-align: center;
+}
+
+.background .box .btnbox .btn {
+	position: absolute;
+	width: 4.4vw;
+	height: 1.3vh;
+	left: 14vw;
+	bottom: 0vh;
+	background-image: url(../images/btn.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
